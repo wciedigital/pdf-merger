@@ -850,7 +850,7 @@ class Fpdf
             $this->y+=$h;
     }
 
-    public function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='')
+    public function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='',$align='', $resize=false, $dpi=300, $palign='', $ismask=false, $imgmask=false, $border=0)
     {
         //Put an image on the page
         if (!isset($this->images[$file])) {

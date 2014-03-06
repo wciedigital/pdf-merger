@@ -275,7 +275,7 @@ class FpdfTpl extends \Fpdf\Fpdf
     /**
      * See FPDF/TCPDF-Documentation ;-)
      */
-    public function Image($file, $x, $y, $w=0, $h=0, $type='', $link='', $align='', $resize=false, $dpi=300, $palign='', $ismask=false, $imgmask=false, $border=0)
+    public function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='',$align='', $resize=false, $dpi=300, $palign='', $ismask=false, $imgmask=false, $border=0)
     {
         if (!is_subclass_of($this, 'TCPDF') && func_num_args() > 7) {
             $this->Error('More than 7 arguments for the Image method are only available in TCPDF.');
